@@ -13,20 +13,20 @@ body {
     display: block;
     margin: 10px;
     position: absolute;
-    margin-left: 60px;
+    margin-left: 30px;
     
 }
 
 .gameMenuItem {
     padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 20px;
     cursor: pointer;
 }
 
 #game4 {
-    margin-left: 150px;
+    margin-left: 175px;
     padding-top: 40px;
 }
 
@@ -62,9 +62,7 @@ body {
     height: 49px;
     font-size: 20px;
     font-family: 'Bebas Neue';
-    /* float: right;
-    margin-top: 500px;
-    margin-left: 00px; */
+
 
 }
 
@@ -75,9 +73,6 @@ body {
     width: 150px;
     margin: 0 auto;
     text-align: center;
-    /* margin-top: 450px;
-    float: right;
-    margin-bottom: 0; */
 }
 
 #bankAndChips {

@@ -5,3 +5,7 @@ function StartGame() {
 function BackButton() {
     location.href = 'http://127.0.0.1:5500/Menu/startMenu.html';
 }
+
+function BankButton() {
+    location.href = 'http://127.0.0.1:5500/Bank/bank.html';
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    <p id="welcome">Welcome to the bank!</p>
+    <div id="container">
+        <div id="deposit">
+            <p id="chipAmount">Casino Chips: $4000</p>
+            <div id="depositAmount"></div>
+            <input type="button" class="depositbutton" value="Deposit"  onclick="DepositButton()">
+        </div>
+        <div id="withdraw">
+            <p id="bankAccount">Bank Account: $4000</p>
+            <div id="withdrawAmount"></div>
+            <input type="button" class="withdrawbutton" value="Withdraw"  onclick="WithdrawButton()">
+        </div>
+    </div>
+    <input type="button" class="backbutton" value="Back"  onclick="BackButton()">
+    <script src="bank.js"></script>
+</body>
+</html>
