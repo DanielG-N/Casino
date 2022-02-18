@@ -1,0 +1,7 @@
+.card{
+    cursor: pointer;
+}
+
+.redraw{
+    box-shadow: 0 0px 20px rgba(201, 16, 176, 0.5);
+}
