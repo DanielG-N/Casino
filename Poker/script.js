@@ -98,6 +98,7 @@ let checkWin = () =>{
             break;
     }
 
+    document.getElementById('payout').innerHTML = `You won $${payout}!`
     console.log(payout);
 
     let chips = document.getElementsByClassName('chipBet');
@@ -126,6 +127,8 @@ let Deal = () =>{
     let btnDeal = document.getElementById("btnDeal");
     btnDeal.innerHTML = "Redraw";
     btnDeal.onclick = () => {Redraw()};
+
+    document.getElementById('payout').innerHTML = '';
 
     console.log(bet);
 }
