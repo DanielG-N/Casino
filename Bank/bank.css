@@ -65,6 +65,10 @@ body {
     text-align: center;
 }
 
+.noselect {
+    user-select: none;
+}
+
 #container {
     position: absolute;
     top: 50%;
@@ -81,4 +85,18 @@ body {
     font-size: 20px;
     font-family: 'Bebas Neue';
     margin-top: 490px;
+}
+
+#depositP {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+#withdrawP {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    padding-top: 15px;
+    cursor: pointer;
 }

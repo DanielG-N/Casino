@@ -12,12 +12,12 @@
     <div id="container">
         <div id="deposit">
             <p id="chipAmount">Casino Chips: $4000</p>
-            <div id="depositAmount"></div>
+            <div id="depositAmount"><p id="depositP" class="noselect" onclick="checkWithdrawBank()"></p></div>
             <input type="button" class="depositbutton" value="Deposit"  onclick="DepositButton()">
         </div>
         <div id="withdraw">
             <p id="bankAccount">Bank Account: $4000</p>
-            <div id="withdrawAmount"></div>
+            <div id="withdrawAmount" onclick="checkDepositBank()"><p id="withdrawP" class="noselect" onclick="checkDepositBank()"></p></div>
             <input type="button" class="withdrawbutton" value="Withdraw"  onclick="WithdrawButton()">
         </div>
     </div>
