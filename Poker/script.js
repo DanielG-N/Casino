@@ -103,7 +103,7 @@ let checkWin = () =>{
 
     chipsAmount += payout;
     localStorage.setItem('chips', chipsAmount);
-    document.getElementById('payout').innerHTML = `You won $${payout}!`
+    document.getElementById('payout').innerHTML = (payout != 0) ? `You won $${payout}!<br>Place a bet and play again.` : `You have nothing.<br>Place a bet and try again.`;
     document.getElementById('chipsAmount').innerHTML = `Chips: $${chipsAmount}`;
 
     let chips = document.getElementsByClassName('chipBet');

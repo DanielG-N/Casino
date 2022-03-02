@@ -20,7 +20,8 @@ p{
 }
 
 .payout{
-    margin-top: 50px;
+    position: absolute;
+    margin-top: 420px;
     font-size: 32px;
 }
 
