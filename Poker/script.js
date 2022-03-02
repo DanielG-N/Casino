@@ -1,10 +1,13 @@
+let chipsAmount = parseInt(localStorage.getItem('chips'));
 let hand = new Set();
 let bet = 0;
+document.getElementById('chipsAmount').innerHTML = `Chips: $${chipsAmount}`;
 
 let checkWin = () =>{
     let suitAndRank = [];
     let counts = {};
     let handScore = 0;
+    
 
     for(let card of hand.values()){
         let temp = card.substring(12, card.length - 4);
@@ -98,8 +101,10 @@ let checkWin = () =>{
             break;
     }
 
+    chipsAmount += payout;
+    localStorage.setItem('chips', chipsAmount);
     document.getElementById('payout').innerHTML = `You won $${payout}!`
-    console.log(payout);
+    document.getElementById('chipsAmount').innerHTML = `Chips: $${chipsAmount}`;
 
     let chips = document.getElementsByClassName('chipBet');
     for(let i = 0; i < chips.length; i++){
@@ -112,6 +117,7 @@ let checkWin = () =>{
 
 let Deal = () =>{
     if(bet == 0) return;
+    localStorage.setItem('chips', chipsAmount);
     
     hand.clear();
     while(hand.size < 5){
@@ -186,8 +192,13 @@ let DiplayCards = () =>{
 }
 
 let Bet = (amount) =>{
+    if(amount > chipsAmount) return;
+
+    chipsAmount -= amount;
+    bet += amount;
+
     document.getElementById('bet').innerHTML += `<img src='../assets/Chips/Chip${amount}.png' width='75'>`
-    bet = bet + amount;
+    document.getElementById('chipsAmount').innerHTML = `Chips: $${chipsAmount}`;
 
 }
 
