@@ -1,7 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-image: url("../assets/greenFelt.jpeg");
+    background-size: cover;
+}
+
+.back{
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+p{
+    margin: 10px 50px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+}
+
+.payout{
+    position: absolute;
+    margin-top: 420px;
+    font-size: 32px;
+}
+
+.rules{
+    background-color: #050;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    height: 570px;
+    border: 2px solid #090;
+    border-radius: 5px;
+}
+
+#bet{
+    position: absolute;
+    margin-top: 600px;
+}
+
+.chipBet{
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    padding: 15px;
+    margin: 8px;
+}
+
+.chips{
+    display: flex;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.bottom{
+    display: inline-flex;
+    position: absolute;
+    bottom: 0px;
+}
+
+.button {
+    background: url("../assets/ButtonUp.png") no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 190px;
+    height: 49px;
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+
+.btnDraw{
+    margin-top: 0px;
+    text-align: center;
+}
+
+#bankAndChips {
+}
+
+#chipsAmount {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cards{
+    height: 200px;
+    margin-top: 75px;
+}
+
+#mainGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+}
+
 .card{
     cursor: pointer;
+    margin: 10px;
 }
 
 .redraw{
-    box-shadow: 0 0px 20px rgba(201, 16, 176, 0.5);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, .75);
 }

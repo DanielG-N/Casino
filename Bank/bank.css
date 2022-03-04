@@ -2,7 +2,8 @@
 
 body {
     background-image: url("../assets/greenFelt.jpeg");
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #welcome {

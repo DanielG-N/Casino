@@ -4,13 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Poker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="cards"></div>
-    <button id="btnDeal" onclick="Deal()">Deal</button>
-    <button id="btnRedraw" onclick="Redraw()">Redraw</button>
+    <div id="mainGame">
+        <div id="cards"></div>
+        <div id="rules" class="rules">
+            <p>Royal Flush<br>100,000:1</p>
+            <p>Straight Flush<br>10,000:1</p>
+            <p>Four-of-a-Kind<br>1,000:1</p>
+            <p>Full House<br>100:1</p>
+            <p>Flush<br>50:1</p>
+            <p>Straight<br>25:1</p>
+            <p>Three-of-a-kind<br>10:1</p>
+            <p>Two pair<br>5:1</p>
+            <p>Pair<br>1:1</p>
+        </div>
+        <p id="payout" class="payout"></p>
+        <div id="bet"></div>
+    </div>
+    <div class="bottom">
+        <input type="button" class="button back" value="Back"  onclick="BackButton()">
+        <div class="chips">
+            <img src="../assets/Chips/Chip1.png" class="chipBet" onclick="Bet(1)">
+            <img src="../assets/Chips/Chip5.png" class="chipBet" onclick="Bet(5)">
+            <img src="../assets/Chips/Chip10.png" class="chipBet" onclick="Bet(10)">
+            <img src="../assets/Chips/Chip20.png" class="chipBet" onclick="Bet(20)">
+            <img src="../assets/Chips/Chip50.png" class="chipBet" onclick="Bet(50)">
+            <img src="../assets/Chips/Chip100.png" class="chipBet" onclick="Bet(100)">
+            <img src="../assets/Chips/Chip500.png" class="chipBet" onclick="Bet(500)">
+            <img src="../assets/Chips/Chip1000.png" class="chipBet" onclick="Bet(1000)">
+            <img src="../assets/Chips/Chip5000.png" class="chipBet" onclick="Bet(5000)">
+        </div>
+        <div id="bankAndChips">    
+            <p id="chipsAmount">Chips: $4000</p>
+            <button id="btnDeal" class="button btnDraw" onclick="Deal()" >Draw</button>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
