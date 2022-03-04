@@ -13,3 +13,7 @@ function BankButton() {
 function Poker() {
     location.href = 'http://127.0.0.1:5500/Poker/index.html';
 }
+
+function Craps() {
+    location.href = 'http://127.0.0.1:5500/Craps/craps.html'
+}
